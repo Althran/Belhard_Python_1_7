@@ -26,7 +26,9 @@ class RandSequence:
         self.n = n
         self.sequence = self.generate(n)
 
-    def generate(self, n):
+    def generate(self, n=None):
+        if not n:
+            n = self.n
         return [random.randint(-n, n) for _ in range(n)]
 
     def __iter__(self):

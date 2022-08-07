@@ -21,7 +21,7 @@
 
 class Phone:
 
-    def __int__(self, brand, model, issue_year):
+    def __init__(self, brand, model, issue_year):
         self.brand = brand
         self.model = model
         self.issue_year = issue_year
